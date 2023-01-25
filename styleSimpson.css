@@ -1,59 +1,42 @@
-html {
-    background-color: gold;
-    font-family: Arial, Helvetica, sans-serif;
+/*pas de modifications sur html et body*/
+
+* {
+   margin : 0px;
+   padding: 0px;
+    vertical-align: top ;   /*résolution bug espace lié au navigateur*/
+}
+
+body,html{
+    height: 100%;
 }
 
 h1 {
     background-color: cornflowerblue;
     color: white;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
 }
 
 h2 {
-    color:rgb(247, 231, 87);
+    color:rgb(235, 202, 16);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.main {
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
+.container {
+    width: 76%;         /*padding de 15% sur largeur ==> 15% gauche 15% droite ==> -30% de la largeur*/
+    background-color: gold;
+    padding : 0 12%;    /*2 infos = vertical horizontal, 4 infos = rotation horaire*/
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    
 }
 
-.block {
+main {
     background-color: white;
     display: flex;
     justify-content: space-around;
-}
-
-nav {
-    color: white;
-    background-color: cornflowerblue;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-div {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-}
-
-figure {
-    color: white;
-    background-color: cornflowerblue;
-    max-width: 500px;
-    max-height: 520px;
-    width: 100%;
+    padding : 40px 20px 40px 10px;
     height: 100%;
-    margin-top: 20px;
 }
 
 .simpsonFamily {
@@ -62,24 +45,68 @@ figure {
     margin: 0px;
 }
 
+nav {
+    color: white;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    width: 20%;
+    height: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 150%;
+}
+
+a[href] {
+    color: white;
+    align-items: center;
+}
+
+div {
+    width: 80%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+figure {
+    color: white;
+    background-color: cornflowerblue;
+    width: 20%;
+    padding: 5px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.groening{
+    display: flex;          /*flex --> sur élément parent*/
+    flex-direction: column;
+    align-items: center;
+}
+
 .matthew {
-    width: 150px;
+    width: 60%;
     border: 1px solid white;
     margin-top: 10px;
-    display: flex;
-    align-content: center;
+   
 }
 
 figcaption {
-    text-align: center;
+    text-align: justify;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 footer {
     background-color: darkblue;
     color: white;
     text-align: center;
-}
-
-a[href] {
-    color: white;
+    padding: 5px;
 }
